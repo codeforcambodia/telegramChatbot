@@ -1,0 +1,40 @@
+import os 
+import json , re
+import telegram 
+from telegram.ext import Updater,CommandHandler ,MessageHandler ,Filters
+
+updater = Updater(token="######")
+os.system("clear")
+print("Bot running")
+dispatcher = updater.dispatcher
+
+def start(bot, update):
+    bot.send_message(chat_id=update.message.chat_id,text="Welcome To Koompi Assistance")
+
+start_handler = CommandHandler("start", start)
+
+dispatcher.add_handler(start_handler)
+
+def conversation(bot, update):
+
+     print(update.message.text)
+     data = update.message.text
+
+     with open('datas.txt', 'a') as f:
+            json.dump(data, f, ensure_ascii=False)
+     
+     x = re.search("^how.*install$", data)
+          
+     if (x):
+           bot.send_message(chat_id=update.message.chat_id, text="www.google.com")   
+     else :
+           bot.send_message(chat_id=update.message.chat_id, text="I don't know")   
+
+
+echo_handler = MessageHandler(Filters.text , conversation)
+
+
+dispatcher.add_handler(echo_handler)
+
+updater.start_polling()
+
