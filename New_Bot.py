@@ -1,7 +1,7 @@
 import telebot
 from telebot import types
 
-bot_token = '744651302:AAGccV6cCRdp743NOjXdNDIWXcpz3lZmQG4'
+bot_token = ''
 bot = telebot.TeleBot(token = bot_token)
 def answer():
     @bot.message_handler(regexp='ello')
