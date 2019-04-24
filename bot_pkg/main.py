@@ -4,8 +4,6 @@ import telegram
 from pprint import pprint
 from telegram.ext import  Updater,CommandHandler ,MessageHandler ,Filters ,StringCommandHandler ,CallbackQueryHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
-#token use 747339627:AAF--S9pBIqu1duJCsUEHME3pL5zN-z8F6w
-#token test 795303896:AAFz6gMr5pdrBPU-IW-YdY7mjovvnCaBZM4
 updater = Updater(token="")
 os.system("clear")
 print("Bot running")
