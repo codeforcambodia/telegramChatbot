@@ -3,10 +3,10 @@
 # KOOMPIBOT
 
 Koompibit is a bot base on telegrambot write in python programming language. 
-[![Package Version](https://img.shields.io/pypi/v/chatterbot.svg)](https://pypi.org/project/python-telegram-bot/)
+[![Package Version](https://img.shields.io/badge/Telegram%20APIs-passing-blue.svg)](https://pypi.org/project/python-telegram-bot/)
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
-[![Python 2.7](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-270/)
-[![Telegram Api](https://img.shields.io/badge/python-3.6-blue.svg)](https://core.telegram.org/api/)
+[![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)](https://www.python.org/downloads/release/python-270/)
+[![Telegram Api](https://img.shields.io/badge/Telegram%20APIs-passing-blue.svg)](https://core.telegram.org/api/)
 
 An example of typical input would be something like this:
 
